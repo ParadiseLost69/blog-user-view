@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import Input from "../components/Input";
@@ -6,8 +6,11 @@ import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
 export default function Login() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="mx-4">
+    <div className="mx-4 splotch">
       <Header />
       <main>
         <Card>
@@ -38,6 +41,7 @@ export default function Login() {
             </div>
           </form>
         </Card>
+        <div className="splotch reversed h-96 w-auto"></div>
       </main>
     </div>
   );
