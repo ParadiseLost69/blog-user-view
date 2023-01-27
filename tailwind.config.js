@@ -27,6 +27,7 @@ module.exports = {
       },
       boxShadow: {
         sm: "5px 5px black",
+        md: "10px 10px black",
       },
       colors: {
         offWhite: "#FAF9F5",
