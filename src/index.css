@@ -25,8 +25,7 @@ body {
 }
 .polygon-scatter {
   background-image: url("../src/img/polygon-scatter-haikei.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .spider-background {

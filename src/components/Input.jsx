@@ -13,7 +13,7 @@ export default function Input({
         required={required}
         id={`${id}`}
         placeholder={`${placeholder}`}
-        className="p-2 outline outline-gray-400 rounded"
+        className="p-2 border border-gray-400 rounded-sm "
       />
     </div>
   );

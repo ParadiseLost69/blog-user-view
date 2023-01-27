@@ -12,7 +12,7 @@ export default function Login() {
   return (
     <div className="mx-4 splotch">
       <Header />
-      <main>
+      <main className="mx-auto">
         <Card>
           <form className="space-y-4">
             <Input

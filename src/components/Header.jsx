@@ -14,7 +14,9 @@ export default function Header() {
         <Link to="/login">
           <Button hidden={true}>Login</Button>
         </Link>
-        <Button hidden={true}>Register</Button>
+        <Link to="/register">
+          <Button hidden={true}>Register</Button>
+        </Link>
       </div>
     </header>
   );
