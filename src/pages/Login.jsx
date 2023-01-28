@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function Login() {
   useEffect(() => {
@@ -41,8 +42,9 @@ export default function Login() {
             </div>
           </form>
         </Card>
-        <div className="splotch reversed h-96 w-auto"></div>
+        <div className="splotch h-96 w-auto float-animation-reversed"></div>
       </main>
+      <Footer />
     </div>
   );
 }

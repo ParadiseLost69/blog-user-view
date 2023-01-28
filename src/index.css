@@ -48,6 +48,13 @@ body {
   animation: press 50ms forwards ease-in-out;
 }
 
+.float-animation {
+  animation: float 10s alternate infinite ease-in-out;
+}
+.float-animation-reversed {
+  animation: float-reverse 10s alternate infinite ease-in-out;
+}
+
 @keyframes bulge {
   0% {
     transform: scale(1);
@@ -65,6 +72,24 @@ body {
   100% {
     transform: translateX(5px) translateY(5px);
     box-shadow: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes float-reverse {
+  0% {
+    transform: rotate(0) scale(-1);
+  }
+  100% {
+    transform: rotate(10deg) scale(-1);
   }
 }
 /* code {
