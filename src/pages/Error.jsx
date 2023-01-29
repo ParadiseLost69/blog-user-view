@@ -12,7 +12,7 @@ export default function Error() {
   return (
     <div>
       <Header />
-      {error.status == 404 ? (
+      {error.status === 404 ? (
         <main className="mx-auto space-y-4">
           <img
             src={Lost}

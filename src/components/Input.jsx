@@ -5,6 +5,7 @@ export default function Input({
   name = "Enter a name",
   placeholder = "Enter a Placeholder",
   required = false,
+  type = "text",
 }) {
   return (
     <div className="flex flex-col space-y-1">
@@ -14,6 +15,7 @@ export default function Input({
         id={`${id}`}
         placeholder={`${placeholder}`}
         className="p-2 border border-gray-400 rounded-sm "
+        type={type}
       />
     </div>
   );

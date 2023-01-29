@@ -15,12 +15,19 @@ export default function Register() {
           </h1>
           <form action="#">
             <Input
+              type="email"
               id={"email"}
               name={"Email"}
               placeholder={"example@domain.com"}
             />
-            <Input id={"password"} name={"Password"} placeholder={"******"} />
             <Input
+              id={"password"}
+              name={"Password"}
+              type={"password"}
+              placeholder={"******"}
+            />
+            <Input
+              type={"password"}
               id={"confirmed_password"}
               name={"Confirm Password"}
               placeholder={"********"}
@@ -32,6 +39,7 @@ export default function Register() {
             />
             <Input
               id={"date of birth"}
+              type="date"
               name={"Date of birth"}
               placeholder={"January 23"}
             />

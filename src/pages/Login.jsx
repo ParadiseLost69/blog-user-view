@@ -24,6 +24,7 @@ export default function Login() {
             <Input
               id={"password"}
               name={"Password"}
+              type={"password"}
               placeholder={"**********"}
               required={true}
             />
