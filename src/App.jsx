@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Posts from "./components/Posts";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Hero />
         <div className=" h-40 spider-background"></div>
         <section id="posts" className="container flex">
-          <h2 className="text-4xl mt-2">Posts</h2>
+          <Posts />
         </section>
       </div>
       <Footer />
