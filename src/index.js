@@ -7,11 +7,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Error from "./pages/Error";
+import Post from "./pages/Post";
 
 const router = createBrowserRouter([
   { path: "/", element: <App />, errorElement: <Error /> },
   { path: "login", element: <Login /> },
   { path: "register", element: <Register /> },
+  { path: "post/:postId", element: <Post /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
