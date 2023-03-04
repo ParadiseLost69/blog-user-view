@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function Post() {
   const [currentPost, setCurrentPost] = useState({});
@@ -20,8 +21,9 @@ export default function Post() {
     }
   }, []);
   return (
-    <div>
-      <h1>Post # </h1>
+    <main className="mx-4">
+      <Header></Header>
+
       {isLoading ? (
         "LOADING"
       ) : (
@@ -30,6 +32,6 @@ export default function Post() {
           <div dangerouslySetInnerHTML={{ __html: currentPost.body }}></div>
         </div>
       )}
-    </div>
+    </main>
   );
 }
